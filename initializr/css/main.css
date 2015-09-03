@@ -154,20 +154,43 @@ nav a:hover {
    Author's custom styles
    ========================================================================== */
 
+@font-face {
+    font-family: 'radiolandregular';
+    src: url('webfonts/RADIOLAND-webfont.eot');
+    src: url('webfonts/RADIOLAND-webfont.eot?#iefix') format('embedded-opentype'),
+         url('webfonts/RADIOLAND-webfont.woff') format('woff'),
+         url('webfonts/RADIOLAND-webfont.ttf') format('truetype'),
+         url('webfonts/RADIOLAND-webfont.svg#radiolandregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 
+}
 
+.container{
+	height: 650px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
+#radio-clock {
+	font-family: "radiolandregular";
+	width: 750px;
+	height: 90px;
+	position: relative;
+	left: 15%;
+	top: 40%;
+	background-color: black;
+}
+.clock{
+	margin: 0 auto;
+	width: 90%;
+	height: 100%;
+	font-family: "radiolandregular";
+	background-color: #ccc;
+}
+.unit{
+	vertical-align: middle;
+	color: red;
+	font-size: 5em;
+}
 /* ==========================================================================
    Media Queries
    ========================================================================== */
