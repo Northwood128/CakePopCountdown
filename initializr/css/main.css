@@ -57,7 +57,7 @@ textarea {
    ========================================================================== */
 
 body {
-    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+    font: 16px Helvetica, Helvetica Neue, Arial;
 }
 
 .wrapper {
@@ -167,29 +167,59 @@ nav a:hover {
 }
 
 .container{
-	height: 650px;
+	width: 750px;
+	height: 50%;
 }
 
+#intro{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.8em;
+	margin: 50px auto;
+	margin-bottom: 0px;
+}
 #radio-clock {
+	margin: 0 auto;
+	text-align: center;
 	font-family: "radiolandregular";
-	width: 750px;
-	height: 90px;
-	position: relative;
-	left: 15%;
-	top: 40%;
+	width: 450px;
+	height: 120px;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 	background-color: black;
 }
-.clock{
+.screen{
 	margin: 0 auto;
-	width: 90%;
-	height: 100%;
-	font-family: "radiolandregular";
-	background-color: #ccc;
+	width: 95%;
+	height: 90%;
+	background-color: #bbc;
 }
-.unit{
-	vertical-align: middle;
+#digits{
+	width: 87%;
+	height: 40%;
+	padding: 5px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.digit{
+	display: inline-block;
+    position: relative;
+	line-height: inherit;
 	color: red;
-	font-size: 5em;
+	font-size: 4em;
+}
+#controls{
+	width: 100%;
+	height: 35%;
+	margin: 0px auto;
+}
+#controls button{
+	width: 150px;
+	margin: 10px auto;
+	font: 16px Helvetica,Helvetica Neue,Arial;;
 }
 /* ==========================================================================
    Media Queries

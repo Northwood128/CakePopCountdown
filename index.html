@@ -14,7 +14,7 @@
 
         <link rel="stylesheet" href="initializr/css/normalize.min.css">
         <link rel="stylesheet" href="initializr/css/main.css">
-
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
         <script src="initializr/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
         <script src="js/tock.min.js"></script>
     </head>
@@ -22,19 +22,25 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-			
 		<div class="container wrapper">
-			<div id="radio-clock" class="main clearfix">
-				<div class="clock clearfix">
-					<span class="unit" id="hours">
-						7
-					</span>
-					<span class="unit" id="minutes">
-						8
-					</span>
-					<span class="unit" id="seconds">
-						9
-					</span>
+			<div id="intro">
+				How long have we we been waiting to get the Cake Pops we deserve? 
+			</div>
+			<div id="radio-clock" class="main">
+				<div class="screen">
+					<div id="digits">
+
+						<span class="digit" id="hours">12</span>
+						<span class="digit">:</span>
+						<span class="digit" id="minutes">25</span>
+						<span class="digit">:</span>
+						<span class="digit" id="seconds">36</span>
+						
+					</div>
+				</div>
+				<div id="controls">
+				    <button id="start">Start</button>
+					<button id="stop">Stop</button>
 				</div>
 			</div>
 		</div>
